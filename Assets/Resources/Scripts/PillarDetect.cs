@@ -37,7 +37,7 @@ public class PillarDetect : MonoBehaviour {
 			this.captureProgess = this.captureProgess + 0.5f;
 			if(this.captureProgess >= 100) {
 				this.capturedByPlayer = this.activePlayer;
-				this.transform.parent.renderer.material = other.renderer.material;
+				this.transform.parent.renderer.material = other.renderer.sharedMaterial;
 				this.transform.parent.tag = "Captured";
 				//Debug.Log(this.capturedByPlayer);
 				//Debug.Log(other.renderer.material);
